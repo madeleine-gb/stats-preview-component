@@ -1,0 +1,147 @@
+body {
+  background-color: hsl(233, 47%, 7%);
+  color: hsl(0, 0%, 100%);
+  font-family: 'Inter', sans-serif;
+  font-size: 15px;
+}
+
+h1 {
+  font-weight: 700;
+}
+
+h2 {
+  font-weight: 700;
+}
+
+h6 {
+  color: hsla(0, 0%, 100%, 0.75);
+  text-transform: uppercase;
+}
+
+p {
+  color: hsla(0, 0%, 100%, 0.75);
+  line-height: 1.8;
+}
+
+img {
+  opacity: 0.5;
+}
+
+.accent {
+  color: hsl(277, 64%, 61%);
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+.container {
+  padding: 6% 0;
+  max-width: 80%;
+  max-height: 446px;
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.clear {
+  clear: both;
+}
+
+.stat-body {
+  display: flex;
+  flex-direction: column;
+  background-color: hsl(244, 38%, 16%);
+  border-radius: 10px 0 0 10px;
+  max-width: 29%;
+  padding: 5%;
+}
+
+.stat-row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.card-img {
+  background-color: #aa5cdb;
+  background-repeat: no-repeat;
+  background-blend-mode: overlay;
+  border-radius: 0 10px 10px 0;
+}
+
+.desktop-img {
+  width: 540px;
+  height: 446px;
+  border-radius: 0 10px 10px 0;
+}
+
+.mobile-img {
+  display: none;
+}
+
+@media (max-width:1060px) {
+  body {
+    text-align: center;
+  }
+
+  h1 {
+    font-size:
+  }
+
+  h2 {
+    font-size: 2rem;
+    margin-bottom: 0;
+  }
+
+  h6 {
+    font-size: 0.8rem;
+    letter-spacing: 2px;
+    margin: 2%;
+  }
+
+  p {
+    padding: 0 10px;
+  }
+
+  .container {
+    max-width: 90%;
+    max-height: 100%;
+    display: flex;
+    flex-direction: column-reverse;
+    align-content: center;
+  }
+
+  .stat-row {
+    flex-direction: column;
+    padding-bottom: 5%;
+  }
+
+  .stat-body {
+    min-width: 90%;
+    border-radius: 0 0 10px 10px;
+    z-index: 1
+  }
+
+  .card-img {
+    border-radius: 10px 10px 0 0;
+    height: 15em;
+    z-index: 0;
+  }
+
+  .desktop-img {
+    display: none;
+  }
+
+  .mobile-img {
+    border-radius: 10px 10px 0 0;
+    display: flex;
+    width: 100%;
+  }
+
+
+}
